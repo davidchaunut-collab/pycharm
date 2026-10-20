@@ -1,70 +1,45 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma page d'accueil</title>
-    <style>
-        /* Réinitialisation des marges et hauteur totale */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ma page web</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
 
-        body, html {
-            height: 100%;
-            font-family: Arial, sans-serif;
-        }
+    body {
+      background-image: url("img1.png");
+      background-size: cover;       /* l'image remplit tout l'écran */
+      background-position: center;  /* image centrée */
+      background-repeat: no-repeat; /* pas de répétition */
+      background-attachment: fixed; /* l'image reste fixe au défilement */
 
-        /* Style de la section d'accueil avec image de fond */
-        .hero {
-            /* Remplacez l'URL par le lien de votre image ou un chemin relatif */
-            background-image: url('img1.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            
-            /* Centrer le contenu */
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: white;
-            background-color: rgba(0, 0, 0, 0.4); /* Optionnel : assombrit l'image pour mieux lire le texte */
-            background-blend-mode: overlay;
-        }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
 
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 20px;
-        }
+    h1, a {
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7); /* texte lisible sur l'image */
+    }
 
-        /* Style du lien / bouton */
-        .btn-lien {
-            display: inline-block;
-            padding: 12.0px 25.0px;
-            background-color: #007bff;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn-lien:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    a {
+      color: white;
+      font-size: 1.2rem;
+    }
+  </style>
 </head>
 <body>
-
-    <div class="hero">
-        <h1>Bienvenue sur mon site</h1>
-        <a href="accueil.html" class="btn-lien">Découvrir le site</a>
-    </div>
-
+  <h1>Bienvenue sur ma page</h1>
+  <p>
+    <a href="https://www.example.com" target="_blank">Cliquez ici pour visiter un site</a>
+  </p>
 </body>
 </html>
