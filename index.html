@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma page d'accueil</title>
+    <style>
+        /* Réinitialisation des marges et hauteur totale */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Style de la section d'accueil avec image de fond */
+        .hero {
+            /* Remplacez l'URL par le lien de votre image ou un chemin relatif */
+            background-image: url('img1.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            
+            /* Centrer le contenu */
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.4); /* Optionnel : assombrit l'image pour mieux lire le texte */
+            background-blend-mode: overlay;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        /* Style du lien / bouton */
+        .btn-lien {
+            display: inline-block;
+            padding: 12.0px 25.0px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-lien:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <h1>Bienvenue sur mon site</h1>
+        <a href="accueil.html" class="btn-lien">Découvrir le site</a>
+    </div>
+
+</body>
+</html>
